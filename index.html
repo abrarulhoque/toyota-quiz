@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Your Match</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <div>
+      <div class="car-selection-div vis-modal">
+        <div class="car-selection-modal">
+          <div class="car-selectiono-header">
+            <div class="car-selectiono-header-title font-semi-bold">
+              Find Your Match
+            </div>
+            <div class="car-selectiono-header-subtitle font-book">
+              Which electrified vehicle fits you?
+            </div>
+          </div>
+
+          <!-- Responsive Image Wrapper -->
+
+          <form class="steps-container">
+            <div class="image-wrapper">
+              <div class="image">
+                <img
+                  id="carImg"
+                  src="assets//images/1.png"
+                  class="is-loaded"
+                  alt="Car Image"
+                />
+              </div>
+            </div>
+            <!-- Step 1: Trips -->
+            <div class="selections-container large step" id="step-1">
+              <div class="title-wrapper">
+                <h3 class="super-heading">Step 1: Trips</h3>
+                <h2 class="heading font-semi-bold">
+                  Select all trips you take on a regular basis
+                </h2>
+                <p class="description">Select all that apply:</p>
+              </div>
+              <ul class="selections-wrapper">
+                <li>
+                  <div class="selection" tabindex="0">
+                    <div class="checkbox-wrapper">
+                      <input
+                        id="dailyCommute"
+                        type="checkbox"
+                        class="custom-checkbox"
+                      />
+                      <label for="dailyCommute" class="checkbox-text heading"
+                        >Daily Commute</label
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="selection" tabindex="0">
+                    <div class="checkbox-wrapper">
+                      <input
+                        id="localAdventures"
+                        type="checkbox"
+                        class="custom-checkbox"
+                      />
+                      <label for="localAdventures" class="checkbox-text heading"
+                        >Local Adventures</label
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="selection" tabindex="0">
+                    <div class="checkbox-wrapper">
+                      <input
+                        id="longRoadTrips"
+                        type="checkbox"
+                        class="custom-checkbox"
+                      />
+                      <label for="longRoadTrips" class="checkbox-text heading"
+                        >Long Road Trips</label
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Step 2: Charger -->
+            <div
+              class="selections-container large step"
+              id="step-2"
+              style="display: none"
+            >
+              <div class="title-wrapper">
+                <h3 class="super-heading">Step 2: Charger</h3>
+                <h2 class="heading font-semi-bold">
+                  Do you have a place to plug in your vehicle overnight?
+                </h2>
+                <p class="description">Select only one:</p>
+              </div>
+              <ul class="selections-wrapper">
+                <li>
+                  <div class="selection" tabindex="0">
+                    <div class="checkbox-wrapper">
+                      <input
+                        id="homeChargerYes"
+                        type="checkbox"
+                        class="custom-checkbox"
+                      />
+                      <label for="homeChargerYes" class="checkbox-text heading"
+                        >Yes</label
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="selection" tabindex="0">
+                    <div class="checkbox-wrapper">
+                      <input
+                        id="homeChargerNo"
+                        type="checkbox"
+                        class="custom-checkbox"
+                      />
+                      <label for="homeChargerNo" class="checkbox-text heading"
+                        >No</label
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Step 3: Passenger -->
+            <div
+              class="selections-container large step"
+              id="step-3"
+              style="display: none"
+            >
+              <div class="title-wrapper">
+                <h3 class="super-heading">Step 3: Passenger</h3>
+                <h2 class="heading font-semi-bold">
+                  How many passengers do you usually carry?
+                </h2>
+                <p class="description">Select only one:</p>
+              </div>
+              <ul class="selections-wrapper">
+                <li>
+                  <div class="selection" tabindex="0">
+                    <div class="checkbox-wrapper">
+                      <input
+                        id="passengerOne"
+                        type="checkbox"
+                        class="custom-checkbox"
+                      />
+                      <label for="passengerOne" class="checkbox-text heading"
+                        >Just me</label
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="selection" tabindex="0">
+                    <div class="checkbox-wrapper">
+                      <input
+                        id="passengerTwo"
+                        type="checkbox"
+                        class="custom-checkbox"
+                      />
+                      <label for="passengerTwo" class="checkbox-text heading"
+                        >Me + 1 passenger</label
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="selection" tabindex="0">
+                    <div class="checkbox-wrapper">
+                      <input
+                        id="passengerFamily"
+                        type="checkbox"
+                        class="custom-checkbox"
+                      />
+                      <label for="passengerFamily" class="checkbox-text heading"
+                        >A family (3+ passengers)</label
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Step 4: Features -->
+            <div
+              class="selections-container large step"
+              id="step-4"
+              style="display: none"
+            >
+              <div class="title-wrapper">
+                <h3 class="super-heading">Step 4: Features</h3>
+                <h2 class="heading font-semi-bold">
+                  What features are most important to you?
+                </h2>
+                <p class="description">Select all that apply:</p>
+              </div>
+              <ul class="selections-wrapper">
+                <li>
+                  <div class="selection" tabindex="0">
+                    <div class="checkbox-wrapper">
+                      <input
+                        id="featureSafety"
+                        type="checkbox"
+                        class="custom-checkbox"
+                      />
+                      <label for="featureSafety" class="checkbox-text heading"
+                        >Safety</label
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="selection" tabindex="0">
+                    <div class="checkbox-wrapper">
+                      <input
+                        id="featurePerformance"
+                        type="checkbox"
+                        class="custom-checkbox"
+                      />
+                      <label
+                        for="featurePerformance"
+                        class="checkbox-text heading"
+                        >Performance</label
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="selection" tabindex="0">
+                    <div class="checkbox-wrapper">
+                      <input
+                        id="featureFuelEconomy"
+                        type="checkbox"
+                        class="custom-checkbox"
+                      />
+                      <label
+                        for="featureFuelEconomy"
+                        class="checkbox-text heading"
+                        >Fuel Economy</label
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Step 5: Results -->
+            <div
+              class="selections-container large step"
+              id="step-5"
+              style="display: none"
+            >
+              <div class="title-wrapper">
+                <h3 class="super-heading">Step 5: Results</h3>
+                <h2 class="heading font-semi-bold">
+                  Here’s your recommended vehicle!
+                </h2>
+                <p class="description">
+                  Based on your selections, we recommend a hybrid SUV for your
+                  adventures and commuting needs.
+                </p>
+              </div>
+              <ul class="selections-wrapper">
+                <li>
+                  <div class="selection" tabindex="0">
+                    <div class="checkbox-wrapper">
+                      <label class="checkbox-text heading"
+                        >Toyota RAV4 Hybrid</label
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Navigation Controls -->
+            <div class="controls">
+              <div class="controls-wrapper">
+                <button
+                  class="secondary button prev outline show"
+                  tabindex="0"
+                  id="prevBtn"
+                  style="display: none"
+                >
+                  Back
+                </button>
+                <div class="steps-wrapper">
+                  <ul class="steps">
+                    <li class="nav-button step-1 complete">
+                      <div class="circle-wrapper">
+                        <div class="circle"></div>
+                      </div>
+                      <p>Trips</p>
+                    </li>
+                    <li class="line"></li>
+                    <li class="nav-button step-2">
+                      <div class="circle-wrapper">
+                        <div class="circle"></div>
+                      </div>
+                      <p>Charger</p>
+                    </li>
+                    <li class="line"></li>
+                    <li class="nav-button step-3">
+                      <div class="circle-wrapper">
+                        <div class="circle"></div>
+                      </div>
+                      <p>Passenger</p>
+                    </li>
+                    <li class="line"></li>
+                    <li class="nav-button step-4">
+                      <div class="circle-wrapper">
+                        <div class="circle"></div>
+                      </div>
+                      <p>Features</p>
+                    </li>
+                    <li class="line"></li>
+                    <li class="nav-button step-5">
+                      <div class="circle-wrapper">
+                        <div class="circle"></div>
+                      </div>
+                      <p>Results</p>
+                    </li>
+                  </ul>
+                </div>
+                <button
+                  class="button next primary-disabled"
+                  tabindex="0"
+                  id="nextBtn"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
