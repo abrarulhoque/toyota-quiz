@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find Your Match</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles-results.css" />
   </head>
-
   <body>
     <div>
       <div class="car-selection-div vis-modal">
@@ -20,9 +20,7 @@
             </div>
           </div>
 
-          <!-- Responsive Image Wrapper -->
-
-          <form class="steps-container">
+          <form id="formContainer" class="steps-container">
             <div class="image-wrapper">
               <div class="image">
                 <img
@@ -33,6 +31,7 @@
                 />
               </div>
             </div>
+
             <!-- Step 1: Trips -->
             <div class="selections-container large step" id="step-1">
               <div class="title-wrapper">
@@ -106,12 +105,14 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="homeChargerYes"
+                        id="chargerAccessYes"
                         type="radio"
                         name="charger"
                         class="custom-checkbox"
                       />
-                      <label for="homeChargerYes" class="checkbox-text heading"
+                      <label
+                        for="chargerAccessYes"
+                        class="checkbox-text heading"
                         >Yes</label
                       >
                     </div>
@@ -121,12 +122,12 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="homeChargerNo"
+                        id="chargerAccessNo"
                         type="radio"
                         name="charger"
                         class="custom-checkbox"
                       />
-                      <label for="homeChargerNo" class="checkbox-text heading"
+                      <label for="chargerAccessNo" class="checkbox-text heading"
                         >No</label
                       >
                     </div>
@@ -144,7 +145,7 @@
               <div class="title-wrapper">
                 <h3 class="super-heading">Step 3: Passenger</h3>
                 <h2 class="heading font-semi-bold">
-                  How many passengers do you usually carry?
+                  What type of vehicle best suits your needs?
                 </h2>
                 <p class="description">Select only one:</p>
               </div>
@@ -153,12 +154,14 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="passengerOne"
+                        id="passengerTypeCar"
                         type="radio"
-                        name="passengers"
+                        name="passengerType"
                         class="custom-checkbox"
                       />
-                      <label for="passengerOne" class="checkbox-text heading"
+                      <label
+                        for="passengerTypeCar"
+                        class="checkbox-text heading"
                         >Car</label
                       >
                     </div>
@@ -168,12 +171,14 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="passengerTwo"
+                        id="passengerTypeMinivan"
                         type="radio"
-                        name="passengers"
+                        name="passengerType"
                         class="custom-checkbox"
                       />
-                      <label for="passengerTwo" class="checkbox-text heading"
+                      <label
+                        for="passengerTypeMinivan"
+                        class="checkbox-text heading"
                         >Minivan</label
                       >
                     </div>
@@ -183,12 +188,14 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="passengerFamily"
+                        id="passengerTypeSUV"
                         type="radio"
-                        name="passengers"
+                        name="passengerType"
                         class="custom-checkbox"
                       />
-                      <label for="passengerFamily" class="checkbox-text heading"
+                      <label
+                        for="passengerTypeSUV"
+                        class="checkbox-text heading"
                         >SUV</label
                       >
                     </div>
@@ -198,12 +205,14 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="passengerFamily"
+                        id="passengerTypeTruck"
                         type="radio"
-                        name="passengers"
+                        name="passengerType"
                         class="custom-checkbox"
                       />
-                      <label for="passengerFamily" class="checkbox-text heading"
+                      <label
+                        for="passengerTypeTruck"
+                        class="checkbox-text heading"
                         >Truck</label
                       >
                     </div>
@@ -213,12 +222,14 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="passengerFamily"
+                        id="passengerTypeNoPreference"
                         type="radio"
-                        name="passengers"
+                        name="passengerType"
                         class="custom-checkbox"
                       />
-                      <label for="passengerFamily" class="checkbox-text heading"
+                      <label
+                        for="passengerTypeNoPreference"
+                        class="checkbox-text heading"
                         >No Preference</label
                       >
                     </div>
@@ -245,11 +256,13 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="featureSafety"
+                        id="featurePerformance"
                         type="checkbox"
                         class="custom-checkbox"
                       />
-                      <label for="featureSafety" class="checkbox-text heading"
+                      <label
+                        for="featurePerformance"
+                        class="checkbox-text heading"
                         >Performance</label
                       >
                     </div>
@@ -259,13 +272,11 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="featurePerformance"
+                        id="featureStyling"
                         type="checkbox"
                         class="custom-checkbox"
                       />
-                      <label
-                        for="featurePerformance"
-                        class="checkbox-text heading"
+                      <label for="featureStyling" class="checkbox-text heading"
                         >Styling</label
                       >
                     </div>
@@ -275,13 +286,11 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="featureFuelEconomy"
+                        id="featureOffRoad"
                         type="checkbox"
                         class="custom-checkbox"
                       />
-                      <label
-                        for="featureFuelEconomy"
-                        class="checkbox-text heading"
+                      <label for="featureOffRoad" class="checkbox-text heading"
                         >Off-Road / AWD</label
                       >
                     </div>
@@ -291,12 +300,12 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="featureFuelEconomy"
+                        id="featureFuelEfficient"
                         type="checkbox"
                         class="custom-checkbox"
                       />
                       <label
-                        for="featureFuelEconomy"
+                        for="featureFuelEfficient"
                         class="checkbox-text heading"
                         >Fuel Efficient</label
                       >
@@ -307,12 +316,12 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="featureFuelEconomy"
+                        id="featurePremiumInterior"
                         type="checkbox"
                         class="custom-checkbox"
                       />
                       <label
-                        for="featureFuelEconomy"
+                        for="featurePremiumInterior"
                         class="checkbox-text heading"
                         >Premium Interior</label
                       >
@@ -323,12 +332,12 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="featureFuelEconomy"
+                        id="featureSeats6Plus"
                         type="checkbox"
                         class="custom-checkbox"
                       />
                       <label
-                        for="featureFuelEconomy"
+                        for="featureSeats6Plus"
                         class="checkbox-text heading"
                         >Seats 6+</label
                       >
@@ -339,8 +348,8 @@
             </div>
 
             <!-- Step 5: Results -->
-            <div
-              class="selections-container large step"
+            <!-- <div
+              class="selections-container large step results-step"
               id="step-5"
               style="display: none"
             >
@@ -349,30 +358,11 @@
                 <h1 class="main-title">
                   Electrified vehicles tailored for you
                 </h1>
-                <div class="vehicle-container">
-                  <img
-                    src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/BZ4_MY24_0014_V001_EBWmRo2gf9MDMXWSWOPwJ.png?wid=1296&fmt=jpg&fit=crop&qlt=90"
-                    alt="bZ4X"
-                    class="vehicle-image"
-                  />
-                  <div class="vehicle-details">
-                    <h2 class="vehicle-name">bZ4X</h2>
-                    <p class="vehicle-description">
-                      The bold, provocative exterior of this SUV blends modern
-                      form with undeniable presence and is sure to keep you
-                      shining bright among the city lights. Inside, a panoramic
-                      roof enhances the feeling of space, while its intuitive
-                      technologies and comfort features effortlessly put you at
-                      ease for every drive.
-                    </p>
-                    <a href="#" class="vehicle-link">Vehicle Overview</a>
-                    <a href="#" class="charging-link"
-                      >Learn More About Charging</a
-                    >
-                  </div>
-                </div>
+                <div id="vehicleResults"> -->
+            <!-- Vehicle results will be displayed here -->
+            <!-- </div>
               </div>
-            </div>
+            </div> -->
 
             <!-- Navigation Controls -->
             <div class="controls">
@@ -433,10 +423,200 @@
               </div>
             </div>
           </form>
+          <div
+            id="resultsContainer"
+            class="steps-container"
+            style="display: none"
+          >
+            <!-- <div class="steps-wrapper results">
+              <ul class="steps">
+                <li class="nav-button step-1 complete">
+                  <div class="circle-wrapper">
+                    <div class="circle"></div>
+                  </div>
+                  <p>Trips</p>
+                </li>
+                <li class="line"></li>
+                <li class="nav-button step-2 complete">
+                  <div class="circle-wrapper">
+                    <div class="circle"></div>
+                  </div>
+                  <p>Charger</p>
+                </li>
+                <li class="line"></li>
+                <li class="nav-button step-3 complete">
+                  <div class="circle-wrapper">
+                    <div class="circle"></div>
+                  </div>
+                  <p>Passenger</p>
+                </li>
+                <li class="line"></li>
+                <li class="nav-button step-4 complete">
+                  <div class="circle-wrapper">
+                    <div class="circle"></div>
+                  </div>
+                  <p>Features</p>
+                </li>
+                <li class="line"></li>
+                <li class="nav-button step-5 active">
+                  <div class="circle-wrapper">
+                    <div class="circle"></div>
+                  </div>
+                  <p>Results</p>
+                </li>
+              </ul>
+            </div> -->
+            <div class="results-controls-wrapper">
+              <ul class="results-controls">
+                <li class="control-item">
+                  <button class="button secondary outline retake-quiz">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8 2V0L5 3L8 6V4C10.2091 4 12 5.79086 12 8C12 10.2091 10.2091 12 8 12C5.79086 12 4 10.2091 4 8C4 7.44772 3.55229 7 3 7C2.44771 7 2 7.44772 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2Z"
+                        fill="black"
+                      ></path>
+                    </svg>
+                    Retake Quiz
+                  </button>
+                </li>
+                <!-- <li class="control-item">
+                  <a
+                    href="/electrified-vehicles/"
+                    class="button secondary no-image btn-view-vehicles"
+                    >See All Electrified Vehicles</a
+                  >
+                </li> -->
+              </ul>
+            </div>
+            <div class="outro active">
+              <h2 class="results-heading">Results</h2>
+              <h2 class="pt-title">Electrified vehicles tailored for you</h2>
+            </div>
+            <div>
+              <section
+                class="highlighted-features-wrapper aem-GridColumn aem-GridColumn--default--12"
+                style="display: block"
+              >
+                <section class="highlighted-features vis">
+                  <div
+                    class="dynamic-layout"
+                    data-variation="highlighted-features"
+                  >
+                    <div
+                      class="dynamic-layout__section"
+                      data-style="medium"
+                      data-odd=""
+                    >
+                      <div class="highlighted-feature-wrapper">
+                        <div class="highlighted-feature">
+                          <div class="highlighted-feature__media">
+                            <picture
+                              class="highlighted-feature__picture"
+                              style="position: relative"
+                            >
+                              <div
+                                class="tcom-picture-backgrounds"
+                                style="
+                                  position: absolute;
+                                  width: 100%;
+                                  height: 100%;
+                                  top: 50%;
+                                  left: 50%;
+                                  transform: translate(-50%, -50%);
+                                "
+                              >
+                                <div
+                                  data-media="(min-width: 374px)"
+                                  data-breakpoint="768"
+                                  style="
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    background-size: cover;
+                                    background-position: center center;
+                                    background-repeat: no-repeat;
+                                    background-image: url('https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/BZ4_MY24_0014_V001_EBWmRo2gf9MDMXWSWOPwJ.png?wid=1023&amp;fmt=jpg&amp;fit=crop&amp;qlt=90');
+                                  "
+                                ></div>
+                              </div>
+                              <source
+                                media="(min-width: 375px)"
+                                srcset="
+                                  https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/BZ4_MY24_0014_V001_EBWmRo2gf9MDMXWSWOPwJ.png?wid=1296&amp;fmt=jpg&amp;fit=crop&amp;qlt=90
+                                "
+                              />
+                              <img
+                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                class="image is-loaded"
+                                alt="Feature Image"
+                                style="opacity: 0"
+                              />
+                            </picture>
+                          </div>
+                          <div class="highlighted-feature__content">
+                            <h4 class="highlighted-feature__title">bZ4X</h4>
+                            <p class="highlighted-feature__body body-02">
+                              The bold, provocative exterior of this SUV blends
+                              modern form with undeniable presence and is sure
+                              to keep you shining bright among the city lights.
+                              Inside, a panoramic roof enhances the feeling of
+                              space, while its intuitive technologies and
+                              comfort features effortlessly put you at ease for
+                              every drive.
+                            </p>
+                            <ul class="highlighted-feature__ctas">
+                              <li class="highlighted-feature__cta">
+                                <a href="/bz4x" class="vis-link no-image">
+                                  Vehicle Overview
+                                </a>
+                              </li>
+                              <li class="highlighted-feature__cta">
+                                <a
+                                  href="/electrified-vehicles/charging/"
+                                  class="vis-link no-image"
+                                >
+                                  Learn More About Charging
+                                  <svg
+                                    class="arrow default"
+                                    width="12"
+                                    height="12"
+                                    viewBox="0 0 12 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M6.06825 0.905047C5.67772 0.514523 5.04456 0.514522 4.65403 0.905047C4.26351 1.29557 4.26351 1.92874 4.65404 2.31926L8.18912 5.85434L4.65321 9.39025C4.26269 9.78077 4.26269 10.4139 4.65321 10.8045C5.04373 11.195 5.6769 11.195 6.06742 10.8045L10.2849 6.58702C10.2937 6.57884 10.3023 6.57046 10.3109 6.5619C10.7014 6.17138 10.7014 5.53821 10.3109 5.14769L6.06825 0.905047Z"
+                                      fill="currentColor"
+                                    ></path>
+                                  </svg>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </section>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
     <script src="assets/js/scripts.js"></script>
   </body>
 </html>

@@ -22,7 +22,7 @@ const vehicleData = {
     'Premium Interior': true,
     'Seats 6+': false,
     Image:
-      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/PriusPrime_MY23_0002_V001_Q2kGMeL9mPeW2G1ZekR2A.png?wid=1296&fmt=jpg&fit=crop&qlt=90',
+      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/PRP_MY23_0005_V002_rS9nS910O_qbRy0wmkT2b3g8X5.png?wid=1023&fmt=jpg&fit=crop&qlt=90',
     Description:
       "Prius Prime's intelligent combination of gas and electric motors is ready to deliver the thrill of 220 hp for every drive. You can also enjoy an EPA-estimated all-electric driving range of up to 44 miles * to help bring efficiency to your commutes."
   },
@@ -40,7 +40,7 @@ const vehicleData = {
     'Premium Interior': true,
     'Seats 6+': true,
     Image:
-      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/HighlanderHybrid_MY23_0008_V001_g8cPQJgB2P3yR2n26Ntnq.png?wid=1296&fmt=jpg&fit=crop&qlt=90',
+      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/HLH_MY23_0003_V001.png?wid=1023&fmt=jpg&fit=crop&qlt=90',
     Description:
       'Enjoy the road for miles and miles more. Highlander Hybrid has up to an EPA-estimated 36 mpg combined rating * to take you on adventures that feel unstoppable. Along with multiple drive modes, you can take trips from Sport Mode to Trail Mode with absolute ease.'
   },
@@ -58,7 +58,7 @@ const vehicleData = {
     'Premium Interior': true,
     'Seats 6+': false,
     Image:
-      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/Venza_MY23_0010_V001_tT2yM74Q6m8bY8dM47R1j.png?wid=1296&fmt=jpg&fit=crop&qlt=90',
+      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/VEN_MY22_0004_V001.png?wid=1023&fmt=jpg&fit=crop&qlt=90',
     Description:
       "Whether you're checking out a new boutique in the city or making your weekend escape, Venza's all-hybrid powertrain helps you enjoy the extra miles with a class-leading EPA-estimated 39 combined mpg rating, * * and 219 combined net horsepower. And its standard AWD capability, driver-focused tech and refined style position Venza in a league of its own."
   },
@@ -76,7 +76,7 @@ const vehicleData = {
     'Premium Interior': true,
     'Seats 6+': true,
     Image:
-      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/TundraiForceMax_MY23_0010_V001_zbx8eYGBbm6g7R93dMXRy.png?wid=1296&fmt=jpg&fit=crop&qlt=90',
+      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/2025/TUH_MY25_0002_V001.png?wid=1023&fmt=jpg&fit=crop&qlt=90',
     Description:
       'This hybrid system pairs a 3.4-liter twin-turbo V6 engine with an electric motor to generate an amazing 437 horsepower and 583 lb.-ft. of torque. And because the electric motor is placed between the engine and transmission, you get instantaneous power to keep your adventures going.'
   },
@@ -94,7 +94,7 @@ const vehicleData = {
     'Premium Interior': true,
     'Seats 6+': false,
     Image:
-      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/CamryHybrid_MY23_0012_V001_DkbW5e579Y9J26M9G6kP3.png?wid=1296&fmt=jpg&fit=crop&qlt=90',
+      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/CAH_MY22_0003_V001.png?wid=1023&fmt=jpg&fit=crop&qlt=90',
     Description:
       "Camry Hybrid's sophisticated hybrid powertrain system has been continually refined for over 16 years, creating a remarkably reliable drive. With an impressive 208 horsepower and optimized space and efficiency, you can depend on Camry Hybrid to handle more than the daily drive."
   },
@@ -112,7 +112,7 @@ const vehicleData = {
     'Premium Interior': true,
     'Seats 6+': false,
     Image:
-      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/Crown_MY23_0012_V001_RGP9Q37r2J79e64k6yW83.png?wid=1296&fmt=jpg&fit=crop&qlt=90',
+      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/CRW_MY24_0003_V001_c82wzBxkIsEaLXVHxHi.png?wid=1023&fmt=jpg&fit=crop&qlt=90',
     Description:
       'An image of innovation you can touch, feel and drive—this reimagined sedan is unlike anything you’ve seen before. Toyota Crown Platinum’s Hybrid MAX Powertrain delivers up to 340 horsepower with an impressive 400 lb.-ft.of torque to unleash more exhilaration to your drives. And XLE and Limited’s remarkably efficient hybrid engine has an EPA-estimated 41 mpg combined. *'
   },
@@ -130,7 +130,7 @@ const vehicleData = {
     'Premium Interior': true,
     'Seats 6+': true,
     Image:
-      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/Sequoia_MY23_0010_V001_Z7D4zL34mB79q8wZ8y59R.png?wid=1296&fmt=jpg&fit=crop&qlt=90',
+      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/electrified/SEQ_MY23_0016_V001_nY39qAQicdGk.png?wid=1023&fmt=jpg&fit=crop&qlt=90',
     Description:
       'With an impressive 437 horsepower and 583 lb.-ft. of torque, Sequoia’s standard i-FORCE MAX Twin Turbo V6 Hybrid engine ensures that performance is never compromised. An electric motor has been placed between the engine and transmission, so power is efficiently transferred for instant response and an EPA-estimated 22 mpg, * helping you make the most of your family adventures.'
   },
@@ -148,7 +148,7 @@ const vehicleData = {
     'Premium Interior': true,
     'Seats 6+': false,
     Image:
-      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/BZ4_MY24_0014_V001_EBWmRo2gf9MDMXWSWOPwJ.png?wid=1296&fmt=jpg&fit=crop&qlt=90',
+      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/BZ4_MY24_0014_V001_EBWmRo2gf9MDMXWSWOPwJ.png?wid=1023&fmt=jpg&fit=crop&qlt=90',
     Description:
       'The bold, provocative exterior of this SUV blends modern form with undeniable presence and is sure to keep you shining bright among the city lights. Inside, a panoramic roof enhances the feeling of space, while its intuitive technologies and comfort features effortlessly put you at ease for every drive.'
   },
@@ -166,7 +166,7 @@ const vehicleData = {
     'Premium Interior': true,
     'Seats 6+': false,
     Image:
-      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/RAV4Prime_MY23_0004_V001_G38L7z8P9B379n8wM38y5.png?wid=1296&fmt=jpg&fit=crop&qlt=90',
+      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/RPV_MY22_0007_V001.png?wid=1023&fmt=jpg&fit=crop&qlt=90',
     Description:
       'Efficient, exciting and dynamic, RAV4 Prime delivers a major boost of power and performance—anywhere you choose to go. Add All-Wheel Drive capability, 302 horsepower and confident handling, and it’s ready to explore new paths.'
   },
@@ -184,7 +184,7 @@ const vehicleData = {
     'Premium Interior': true,
     'Seats 6+': false,
     Image:
-      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/Prius_MY23_0004_V001_wmL7eD34dL29Q34y8zX6G.png?wid=1296&fmt=jpg&fit=crop&qlt=90',
+      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/PRS_MY23_0004_V002.png?wid=1023&fmt=jpg&fit=crop&qlt=90',
     Description:
       'The perfect blend of driving excitement, fuel efficiency and proven reliability, Prius reintroduces itself in stunning form. It’s filled with cutting-edge tech and modern appeal: Get ready to experience an undeniable connection to the road and the environment.'
   },
@@ -202,7 +202,7 @@ const vehicleData = {
     'Premium Interior': true,
     'Seats 6+': false,
     Image:
-      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/CorollaHybrid_MY23_0012_V001_YJkD26bG8mG9W69wQ59zP.png?wid=1296&fmt=jpg&fit=crop&qlt=90',
+      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/COH_MY23_0003_V002.png?wid=1023&fmt=jpg&fit=crop&qlt=90',
     Description:
       'Enjoy Corolla Hybrid’s increased horsepower and torque without sacrificing a reliable drive and efficiency. With dependable fuel economy, the only worry you’ll have is deciding your next destination.'
   },
@@ -220,7 +220,7 @@ const vehicleData = {
     'Premium Interior': true,
     'Seats 6+': false,
     Image:
-      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/RAV4Hybrid_MY23_0008_V001_r76Y2kP7gM34B89n8y98J.png?wid=1296&fmt=jpg&fit=crop&qlt=90',
+      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/RHV_MY23_0003_V001_HyrDKmIs.png?wid=1023&fmt=jpg&fit=crop&qlt=90',
     Description:
       'The RAV4 Hybrid Woodland Edition is built for awesome off-road adventures. * Equipped with Electronic On Demand All-Wheel Drive (AWD) and 219 combined net horsepower, in addition to Trail Mode, this versatile SUV allows you to trek farther through the great outdoors.'
   },
@@ -238,11 +238,19 @@ const vehicleData = {
     'Premium Interior': true,
     'Seats 6+': true,
     Image:
-      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/Sienna_MY23_0010_V001_P8xJ44G9dL8bL9G7q3zP4.png?wid=1296&fmt=jpg&fit=crop&qlt=90',
+      'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/2025/SIE_MY25_0007_V001.png?wid=1023&fmt=jpg&fit=crop&qlt=90',
     Description:
       'Stylish on the outside. Functional on the inside. With a hybrid powertrain and available All-Wheel Drive (AWD), Sienna has the versatility to keep up with your lifestyle.'
   }
 }
+
+const stepsContainer = document.querySelector('#resultsContainer')
+const formContainer = document.getElementById('formContainer')
+const retakeQuizBtn = document.querySelector('.retake-quiz')
+
+retakeQuizBtn.addEventListener('click', function () {
+  location.reload() // Reloads the current page
+})
 
 function showStep (step) {
   steps.forEach((el, index) => {
@@ -251,6 +259,13 @@ function showStep (step) {
   prevBtn.style.display = step > 1 ? 'inline-block' : 'none'
   nextBtn.textContent = step === totalSteps ? 'See Results' : 'Next'
 
+  if (step === totalSteps) {
+    stepsContainer.style.display = 'block'
+    formContainer.style.display = 'none'
+    displayVehicleResults()
+  } else {
+    stepsContainer.style.display = 'none'
+  }
   // Update image src based on current step
   carImg.src = `assets/images/${step}.png` // Change this path as necessary
 }
@@ -322,38 +337,68 @@ function displayVehicleResults () {
 }
 
 function displayVehicles (vehicles) {
-  vehicleResultsContainer.innerHTML = ''
+  const highlightedFeaturesWrapper = document.querySelector(
+    '.highlighted-features-wrapper'
+  )
+  highlightedFeaturesWrapper.innerHTML = '' // Clear existing content
+
   if (vehicles.length === 0) {
-    vehicleResultsContainer.innerHTML = '<p>No matching vehicles found.</p>'
+    highlightedFeaturesWrapper.innerHTML = '<p>No matching vehicles found.</p>'
     return
   }
 
   vehicles.forEach(vehicle => {
-    const vehicleDiv = document.createElement('div')
-    vehicleDiv.classList.add('vehicle-container')
-
-    const image = document.createElement('img')
-    image.src = vehicle.Image
-    image.alt = vehicle.Model
-    image.classList.add('vehicle-image')
-
-    const detailsDiv = document.createElement('div')
-    detailsDiv.classList.add('vehicle-details')
-
-    const name = document.createElement('h2')
-    name.classList.add('vehicle-name')
-    name.textContent = vehicle.Model
-
-    const description = document.createElement('p')
-    description.classList.add('vehicle-description')
-    description.textContent = vehicle.Description
-
-    detailsDiv.appendChild(name)
-    detailsDiv.appendChild(description)
-
-    vehicleDiv.appendChild(image)
-    vehicleDiv.appendChild(detailsDiv)
-    vehicleResultsContainer.appendChild(vehicleDiv)
+    const featureHTML = `
+      <section class="highlighted-features vis">
+        <div class="dynamic-layout" data-variation="highlighted-features">
+          <div class="dynamic-layout__section" data-style="medium" data-odd="">
+            <div class="highlighted-feature-wrapper">
+              <div class="highlighted-feature">
+                <div class="highlighted-feature__media">
+                  <picture class="highlighted-feature__picture" style="position: relative">
+                    <div class="tcom-picture-backgrounds" style="position: absolute; width: 100%; height: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                      <div data-media="(min-width: 374px)" data-breakpoint="768" style="position: absolute; width: 100%; height: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(${
+                        vehicle.Image
+                      });">
+                      </div>
+                    </div>
+                    <source media="(min-width: 375px)" srcset="${
+                      vehicle.Image
+                    }" />
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="image is-loaded" alt="${
+                      vehicle.Model
+                    }" style="opacity: 0" />
+                  </picture>
+                </div>
+                <div class="highlighted-feature__content">
+                  <h4 class="highlighted-feature__title">${vehicle.Model}</h4>
+                  <p class="highlighted-feature__body body-02">${
+                    vehicle.Description
+                  }</p>
+                  <ul class="highlighted-feature__ctas">
+                    <li class="highlighted-feature__cta">
+                      <a href="/vehicles/${vehicle.Model.toLowerCase().replace(
+                        ' ',
+                        '-'
+                      )}" class="vis-link no-image">Vehicle Overview</a>
+                    </li>
+                    <li class="highlighted-feature__cta">
+                      <a href="/electrified-vehicles/charging/" class="vis-link no-image">
+                        Learn More About Charging
+                        <svg class="arrow default" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.06825 0.905047C5.67772 0.514523 5.04456 0.514522 4.65403 0.905047C4.26351 1.29557 4.26351 1.92874 4.65404 2.31926L8.18912 5.85434L4.65321 9.39025C4.26269 9.78077 4.26269 10.4139 4.65321 10.8045C5.04373 11.195 5.6769 11.195 6.06742 10.8045L10.2849 6.58702C10.2937 6.57884 10.3023 6.57046 10.3109 6.5619C10.7014 6.17138 10.7014 5.53821 10.3109 5.14769L6.06825 0.905047Z" fill="currentColor"></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    `
+    highlightedFeaturesWrapper.innerHTML += featureHTML
   })
 }
 

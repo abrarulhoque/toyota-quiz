@@ -139,73 +139,20 @@ button > * {
   text-align: center;
 }
 
-/* Result */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .vehicle-container {
+    flex-direction: column;
+  }
 
-.results-container {
-  max-width: 1200px;
-  margin: 40px auto;
-  text-align: center;
+  .vehicle-image,
+  .vehicle-details {
+    width: 100%;
+  }
 }
 
-.results-title {
-  font-size: 18px;
-  font-weight: normal;
-  color: #333;
-  margin-bottom: 10px;
-}
+/* Additional CSS ends here */
 
-.main-title {
-  font-size: 48px;
-  font-weight: normal;
-  color: #000;
-  margin-bottom: 40px;
-}
-
-.vehicle-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-.vehicle-image {
-  max-width: 400px;
-  border-radius: 10px;
-}
-
-.vehicle-details {
-  max-width: 500px;
-  text-align: left;
-}
-
-.vehicle-name {
-  font-size: 36px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.vehicle-description {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.vehicle-link,
-.charging-link {
-  display: block;
-  font-size: 16px;
-  color: #d32f2f;
-  text-decoration: none;
-  margin-top: 10px;
-}
-
-.vehicle-link:hover,
-.charging-link:hover {
-  text-decoration: underline;
-}
-
-/* Result ends */
 .vis-modal .button.secondary:before {
   display: inline-block;
 }
