@@ -318,7 +318,7 @@ function displayVehicleResults () {
   if (document.getElementById('featureSeats6Plus').checked)
     selectedFeatures.push('Seats 6+')
 
-  const matchedVehicles = Object.values(vehicleData).filter(vehicle => {
+  let matchedVehicles = Object.values(vehicleData).filter(vehicle => {
     // Check if any of the selected trips match the vehicle (OR condition)
     const tripMatch =
       selectedTrips.length === 0 || selectedTrips.some(trip => vehicle[trip])
@@ -332,6 +332,15 @@ function displayVehicleResults () {
 
     return tripMatch && chargerMatch && typeMatch && featureMatch
   })
+
+  // Apply default recommendations if no match found
+  if (matchedVehicles.length === 0) {
+    if (chargerAccess) {
+      matchedVehicles = [vehicleData['bZ4X']]
+    } else {
+      matchedVehicles = [vehicleData['RAV4 Hybrid']]
+    }
+  }
 
   displayVehicles(matchedVehicles)
 }
@@ -410,6 +419,29 @@ document.addEventListener('DOMContentLoaded', function () {
   const prevButton = document.querySelector('.prev')
   const formSteps = document.querySelectorAll('.selections-container')
   let currentStep = 0
+
+  const featureCheckboxes = document.querySelectorAll('.features-checkbox')
+  const maxSelections = 3
+
+  featureCheckboxes.forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+      const checkedCount = document.querySelectorAll(
+        '.features-checkbox:checked'
+      ).length
+
+      if (checkedCount >= maxSelections) {
+        checkboxes.forEach(function (cb) {
+          if (!cb.checked) {
+            cb.disabled = true
+          }
+        })
+      } else {
+        checkboxes.forEach(function (cb) {
+          cb.disabled = false
+        })
+      }
+    })
+  })
 
   // Function to update step visuals
   function updateStepVisuals () {
