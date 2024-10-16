@@ -6,7 +6,6 @@
     <title>Find Your Match</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-
   <body>
     <div>
       <div class="car-selection-div vis-modal">
@@ -20,8 +19,6 @@
             </div>
           </div>
 
-          <!-- Responsive Image Wrapper -->
-
           <form class="steps-container">
             <div class="image-wrapper">
               <div class="image">
@@ -33,6 +30,7 @@
                 />
               </div>
             </div>
+
             <!-- Step 1: Trips -->
             <div class="selections-container large step" id="step-1">
               <div class="title-wrapper">
@@ -106,12 +104,14 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="homeChargerYes"
+                        id="chargerAccessYes"
                         type="radio"
                         name="charger"
                         class="custom-checkbox"
                       />
-                      <label for="homeChargerYes" class="checkbox-text heading"
+                      <label
+                        for="chargerAccessYes"
+                        class="checkbox-text heading"
                         >Yes</label
                       >
                     </div>
@@ -121,12 +121,12 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="homeChargerNo"
+                        id="chargerAccessNo"
                         type="radio"
                         name="charger"
                         class="custom-checkbox"
                       />
-                      <label for="homeChargerNo" class="checkbox-text heading"
+                      <label for="chargerAccessNo" class="checkbox-text heading"
                         >No</label
                       >
                     </div>
@@ -144,7 +144,7 @@
               <div class="title-wrapper">
                 <h3 class="super-heading">Step 3: Passenger</h3>
                 <h2 class="heading font-semi-bold">
-                  How many passengers do you usually carry?
+                  What type of vehicle best suits your needs?
                 </h2>
                 <p class="description">Select only one:</p>
               </div>
@@ -153,12 +153,14 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="passengerOne"
+                        id="passengerTypeCar"
                         type="radio"
-                        name="passengers"
+                        name="passengerType"
                         class="custom-checkbox"
                       />
-                      <label for="passengerOne" class="checkbox-text heading"
+                      <label
+                        for="passengerTypeCar"
+                        class="checkbox-text heading"
                         >Car</label
                       >
                     </div>
@@ -168,12 +170,14 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="passengerTwo"
+                        id="passengerTypeMinivan"
                         type="radio"
-                        name="passengers"
+                        name="passengerType"
                         class="custom-checkbox"
                       />
-                      <label for="passengerTwo" class="checkbox-text heading"
+                      <label
+                        for="passengerTypeMinivan"
+                        class="checkbox-text heading"
                         >Minivan</label
                       >
                     </div>
@@ -183,12 +187,14 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="passengerFamily"
+                        id="passengerTypeSUV"
                         type="radio"
-                        name="passengers"
+                        name="passengerType"
                         class="custom-checkbox"
                       />
-                      <label for="passengerFamily" class="checkbox-text heading"
+                      <label
+                        for="passengerTypeSUV"
+                        class="checkbox-text heading"
                         >SUV</label
                       >
                     </div>
@@ -198,12 +204,14 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="passengerFamily"
+                        id="passengerTypeTruck"
                         type="radio"
-                        name="passengers"
+                        name="passengerType"
                         class="custom-checkbox"
                       />
-                      <label for="passengerFamily" class="checkbox-text heading"
+                      <label
+                        for="passengerTypeTruck"
+                        class="checkbox-text heading"
                         >Truck</label
                       >
                     </div>
@@ -213,12 +221,14 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="passengerFamily"
+                        id="passengerTypeNoPreference"
                         type="radio"
-                        name="passengers"
+                        name="passengerType"
                         class="custom-checkbox"
                       />
-                      <label for="passengerFamily" class="checkbox-text heading"
+                      <label
+                        for="passengerTypeNoPreference"
+                        class="checkbox-text heading"
                         >No Preference</label
                       >
                     </div>
@@ -245,11 +255,13 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="featureSafety"
+                        id="featurePerformance"
                         type="checkbox"
                         class="custom-checkbox"
                       />
-                      <label for="featureSafety" class="checkbox-text heading"
+                      <label
+                        for="featurePerformance"
+                        class="checkbox-text heading"
                         >Performance</label
                       >
                     </div>
@@ -259,13 +271,11 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="featurePerformance"
+                        id="featureStyling"
                         type="checkbox"
                         class="custom-checkbox"
                       />
-                      <label
-                        for="featurePerformance"
-                        class="checkbox-text heading"
+                      <label for="featureStyling" class="checkbox-text heading"
                         >Styling</label
                       >
                     </div>
@@ -275,13 +285,11 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="featureFuelEconomy"
+                        id="featureOffRoad"
                         type="checkbox"
                         class="custom-checkbox"
                       />
-                      <label
-                        for="featureFuelEconomy"
-                        class="checkbox-text heading"
+                      <label for="featureOffRoad" class="checkbox-text heading"
                         >Off-Road / AWD</label
                       >
                     </div>
@@ -291,12 +299,12 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="featureFuelEconomy"
+                        id="featureFuelEfficient"
                         type="checkbox"
                         class="custom-checkbox"
                       />
                       <label
-                        for="featureFuelEconomy"
+                        for="featureFuelEfficient"
                         class="checkbox-text heading"
                         >Fuel Efficient</label
                       >
@@ -307,12 +315,12 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="featureFuelEconomy"
+                        id="featurePremiumInterior"
                         type="checkbox"
                         class="custom-checkbox"
                       />
                       <label
-                        for="featureFuelEconomy"
+                        for="featurePremiumInterior"
                         class="checkbox-text heading"
                         >Premium Interior</label
                       >
@@ -323,12 +331,12 @@
                   <div class="selection" tabindex="0">
                     <div class="checkbox-wrapper">
                       <input
-                        id="featureFuelEconomy"
+                        id="featureSeats6Plus"
                         type="checkbox"
                         class="custom-checkbox"
                       />
                       <label
-                        for="featureFuelEconomy"
+                        for="featureSeats6Plus"
                         class="checkbox-text heading"
                         >Seats 6+</label
                       >
@@ -349,27 +357,8 @@
                 <h1 class="main-title">
                   Electrified vehicles tailored for you
                 </h1>
-                <div class="vehicle-container">
-                  <img
-                    src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/alternative-fuel/features/BZ4_MY24_0014_V001_EBWmRo2gf9MDMXWSWOPwJ.png?wid=1296&fmt=jpg&fit=crop&qlt=90"
-                    alt="bZ4X"
-                    class="vehicle-image"
-                  />
-                  <div class="vehicle-details">
-                    <h2 class="vehicle-name">bZ4X</h2>
-                    <p class="vehicle-description">
-                      The bold, provocative exterior of this SUV blends modern
-                      form with undeniable presence and is sure to keep you
-                      shining bright among the city lights. Inside, a panoramic
-                      roof enhances the feeling of space, while its intuitive
-                      technologies and comfort features effortlessly put you at
-                      ease for every drive.
-                    </p>
-                    <a href="#" class="vehicle-link">Vehicle Overview</a>
-                    <a href="#" class="charging-link"
-                      >Learn More About Charging</a
-                    >
-                  </div>
+                <div id="vehicleResults">
+                  <!-- Vehicle results will be displayed here -->
                 </div>
               </div>
             </div>
@@ -436,7 +425,6 @@
         </div>
       </div>
     </div>
-
-    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/draft.js"></script>
   </body>
 </html>
